@@ -5,9 +5,9 @@ import {
   heading,
   navLinks,
   navLinkItem,
-  navLinkText,
-  topbar,
 } from './layout.module.css'
+import { SocialIcon } from 'react-social-icons';
+
 import { StaticImage } from 'gatsby-plugin-image'
 
 const Layout = ({ pageTitle, children }) => {
@@ -16,8 +16,7 @@ const Layout = ({ pageTitle, children }) => {
       <title>{pageTitle}</title>
       <div >
         <nav className="flex items-center justify-between flex-wrap bg-white-500 p-6">
-          <div className="flex items-center flex-shrink-0 text-white mr-6">
-
+          <div className="flex flex-shrink-0 text-white mr-6">
             <StaticImage
               alt="redlite band logo"
               src="../images/logo.png"
@@ -25,11 +24,16 @@ const Layout = ({ pageTitle, children }) => {
           </div>
           <ul className={navLinks}>
             <li className={navLinkItem}>
-              <Link to="/">Home</Link></li>
+              <Link to="/">HOME</Link></li>
             <li className={navLinkItem}>
-              <Link to="/about">About</Link></li>
+              <Link to="/about">BIO</Link></li>
+
             <li className={navLinkItem}>
-              <Link to="/music">Music</Link></li>
+              <Link to="/music">EVENTS</Link></li>
+
+            <li className={navLinkItem}>
+              <Link to="/music">CONTACT</Link></li>
+
           </ul>
         </nav>
       </div>
@@ -37,7 +41,8 @@ const Layout = ({ pageTitle, children }) => {
         <h1 className={heading}>{pageTitle}</h1>
         {children}
       </main>
-
+      <SocialIcon url="https://www.instagram.com/redliteband/?hl=en" />
+      <SocialIcon url="https://www.facebook.com/redliteband" />
 
     </div>
   )
