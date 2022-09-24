@@ -15,12 +15,12 @@ const IndexPage = () => {
       <StaticImage
         alt="redlite band"
         src="../images/band.jpg"
-        className="wid"
       />
 
       <StaticImage
-        alt="crowd"
-        src="../images/crowd.jpeg"
+        alt="a crowd"
+        src="../images/stage.jpeg"
+
       />
       {biteMyBullet}
 
