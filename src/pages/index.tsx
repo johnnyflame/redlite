@@ -5,7 +5,8 @@ import Spotify from 'react-spotify-embed'
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.css';
 import Container from 'react-bootstrap/Container';
-
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import Stack from 'react-bootstrap/Stack';
 
 
@@ -59,7 +60,6 @@ import Stack from 'react-bootstrap/Stack';
 
 const IndexPage = () => {
 
-  const biteMyBullet = <Spotify link="https://open.spotify.com/track/4VmUco14SUtJjD62JAjKDn?si=2594ae74d75b4797" />
 
 
 
@@ -74,14 +74,35 @@ const IndexPage = () => {
             src="../images/band.jpg"
           />
 
-          <Container>Who are we</Container>
-          <Container>Our Music</Container>
-          {biteMyBullet}
+          <Container>
+            <Row>
+              <h1 className='font-mono text-center'>About</h1>
+            </Row>
+            <Row>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo facere id perspiciatis sequi ipsa nisi ex sapiente minus, a laudantium dicta porro quo magnam sunt pariatur. Quidem nostrum exercitationem repellendus dolorem aliquid non autem assumenda nesciunt consequatur inventore? Consectetur aliquam dolorum at dicta ad, ipsum vitae soluta quidem expedita, quas magnam neque laudantium ab nesciunt. Recusandae quo rem dolorum veniam ullam tenetur in sed delectus consequatur, provident enim repudiandae neque expedita inventore maxime maiores eveniet corrupti eum? Voluptatum neque, repellendus quis voluptas deleniti temporibus natus laborum perferendis vero consectetur impedit! Suscipit harum inventore necessitatibus porro accusantium? Consequatur esse laborum cum?
+            </Row>
 
-          <iframe src="https://open.spotify.com/embed/artist/2jKjTM6wl6CiHrBakMReOX?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </Container>
+
+
+          <Container>
+            <Row>
+              <h1 className='font-mono text-center'>Our Music</h1>
+            </Row>
+            <Row>
+              <Spotify link="https://open.spotify.com/track/4VmUco14SUtJjD62JAjKDn?si=2594ae74d75b4797" />
+
+            </Row>
+
+            <iframe src="https://open.spotify.com/embed/artist/2jKjTM6wl6CiHrBakMReOX?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+          </Container>
+
+
+
         </Stack>
       </Container>
-    </Layout>
+    </Layout >
   )
 }
 
