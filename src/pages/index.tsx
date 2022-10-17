@@ -11,51 +11,6 @@ import Stack from 'react-bootstrap/Stack';
 
 
 
-// function BandImageCarousel() {
-//   return (<Carousel fade  >
-//     <Carousel.Item>
-//       <StaticImage
-//         alt="redlite band"
-//         src="../images/playing_1.jpg"
-//         width={1300}
-//         height={900}
-//       />
-//       <Carousel.Caption>
-//         <h3>First slide label</h3>
-//         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-//       </Carousel.Caption>
-//     </Carousel.Item>
-//     <Carousel.Item>
-//       <StaticImage
-//         alt="redlite band"
-//         src="../images/redlite_03.jpeg"
-//         width={1300}
-//       // height={900}
-//       />
-//       <Carousel.Caption>
-//         <h3>Second slide label</h3>
-//         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-//       </Carousel.Caption>
-//     </Carousel.Item>
-//     <Carousel.Item>
-//       <StaticImage
-//         alt="redlite band"
-//         src="../images/band.jpg"
-//         width={1300}
-//         height={900}
-//       />
-//       <Carousel.Caption>
-//         <h3>Third slide label</h3>
-//         <p>
-//           Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-//         </p>
-//       </Carousel.Caption>
-//     </Carousel.Item>
-//   </Carousel>
-//   );
-// }
-
-
 
 
 const IndexPage = () => {
@@ -65,9 +20,7 @@ const IndexPage = () => {
 
   return (
     <Layout pageTitle="RËDLITE OFFICIAL">
-
-      {/* <p>Energetic hard rock band from Stockholm, Sweden </p> */}
-      <Container fluid className='gx-0'>
+      <Container fluid className='gx-0' id='/'>
         <Stack gap={3}>
           <StaticImage
             alt="redlite band"
@@ -76,29 +29,24 @@ const IndexPage = () => {
 
           <Container>
             <Row>
-              <h1 className='font-mono text-center'>About</h1>
+              <h1 className='font-mono text-center' id="about">About</h1>
             </Row>
             <Row>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo facere id perspiciatis sequi ipsa nisi ex sapiente minus, a laudantium dicta porro quo magnam sunt pariatur. Quidem nostrum exercitationem repellendus dolorem aliquid non autem assumenda nesciunt consequatur inventore? Consectetur aliquam dolorum at dicta ad, ipsum vitae soluta quidem expedita, quas magnam neque laudantium ab nesciunt. Recusandae quo rem dolorum veniam ullam tenetur in sed delectus consequatur, provident enim repudiandae neque expedita inventore maxime maiores eveniet corrupti eum? Voluptatum neque, repellendus quis voluptas deleniti temporibus natus laborum perferendis vero consectetur impedit! Suscipit harum inventore necessitatibus porro accusantium? Consequatur esse laborum cum?
+              Next in the long line of talents pouring out of Sweden, RËDLITE is here to kick a dormant sleaze society back into gear! Stemming inspirations from the 80s Rock N' Roll era where it was all about hairspray, dirty riffs and good times, the band is the genre through and through. With catchy riffs and an energetic live performance, Redlite comes crashing in to get the party rolling!
             </Row>
-
           </Container>
 
 
           <Container>
             <Row>
-              <h1 className='font-mono text-center'>Our Music</h1>
+              <h1 className='font-mono text-center' id="music">Our Music</h1>
             </Row>
             <Row>
               <Spotify link="https://open.spotify.com/track/4VmUco14SUtJjD62JAjKDn?si=2594ae74d75b4797" />
-
+              <iframe src="https://open.spotify.com/embed/artist/2jKjTM6wl6CiHrBakMReOX?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </Row>
 
-            <iframe src="https://open.spotify.com/embed/artist/2jKjTM6wl6CiHrBakMReOX?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
           </Container>
-
-
 
         </Stack>
       </Container>
