@@ -1,8 +1,7 @@
 import * as React from 'react'
-import { Nav, Navbar, Container, NavDropdown } from "react-bootstrap"
+import { Nav, Navbar, Container } from "react-bootstrap"
 import 'bootstrap/dist/css/bootstrap.css';
-import { AnchorLink } from "gatsby-plugin-anchor-links";
-import { Link } from "gatsby"
+
 
 
 
@@ -45,13 +44,14 @@ const Layout = ({ pageTitle, children }) => {
     </Navbar >
 
   return (
-    <div >
+    <div   >
       <title>{pageTitle}</title>
       {header}
       <main>
         {children}
       </main>
-    </div>
+      {header}
+    </div >
   )
 }
 export default Layout 
