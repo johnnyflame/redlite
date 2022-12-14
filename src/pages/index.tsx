@@ -4,7 +4,7 @@ import Spotify from 'react-spotify-embed'
 import 'bootstrap/dist/css/bootstrap.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import band from "../components/band.jpg"
+
 import Stack from 'react-bootstrap/Stack';
 
 
@@ -19,7 +19,7 @@ const IndexPage = () => {
         <Stack gap={3}>
           <img
             alt="redlite_band"
-            src={band}
+            src={"./images/band.jpg"}
           />
 
           <Container>
