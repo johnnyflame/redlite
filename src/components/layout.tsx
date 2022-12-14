@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { Nav, Navbar, Container } from "react-bootstrap"
 import 'bootstrap/dist/css/bootstrap.css';
+import logo from "../components/logo.png"
 
 
 
@@ -15,7 +16,7 @@ const Layout = ({ pageTitle, children }) => {
   const header =
     <Navbar collapseOnSelect expand='sm' bg='dark' variant='dark' className="justify-content-center">
       <Container>
-        <Navbar.Brand href="/"> <img src={'/images/logo.png'} width={300} alt="redlite_band_logo"></img></Navbar.Brand>
+        <Navbar.Brand href="/"> <img src={logo} width={300} alt="redlite_band_logo"></img></Navbar.Brand>
         <Navbar.Toggle aria-controls='responsive-navbar-nav' />
         <Navbar.Collapse id='responsive-navbar-nav'>
           <Nav className="me-auto">
