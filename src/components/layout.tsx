@@ -7,7 +7,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 import { SocialIcon } from 'react-social-icons';
 
-import { StaticImage } from 'gatsby-plugin-image'
 
 
 
@@ -16,20 +15,15 @@ const Layout = ({ pageTitle, children }) => {
   const header =
     <Navbar collapseOnSelect expand='sm' bg='dark' variant='dark' className="justify-content-center">
       <Container>
-        <Navbar.Brand href="/"> <StaticImage
-          alt="redlite_band_logo"
-          src="../images/logo.png"
-          width={300}
-        /></Navbar.Brand>
-
+        <Navbar.Brand href="/"> <img src={'/images/logo.png'} width={300} alt="redlite_band_logo"></img></Navbar.Brand>
         <Navbar.Toggle aria-controls='responsive-navbar-nav' />
         <Navbar.Collapse id='responsive-navbar-nav'>
           <Nav className="me-auto">
             <Nav.Link href='/'>Home</Nav.Link>
             <Nav.Link href='/#about'>About</Nav.Link>
             <Nav.Link href='/#music'>Music</Nav.Link>
-            <Nav.Link href='/#events'>Events</Nav.Link>
-            <Nav.Link href='/#contact'>Contact</Nav.Link>
+            {/* <Nav.Link href='/#events'>Events</Nav.Link>
+            <Nav.Link href='/#contact'>Contact</Nav.Link> */}
           </Nav>
         </Navbar.Collapse>
 
@@ -54,4 +48,4 @@ const Layout = ({ pageTitle, children }) => {
     </div >
   )
 }
-export default Layout 
+export default Layout

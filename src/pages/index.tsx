@@ -1,6 +1,5 @@
 import * as React from 'react'
 import Layout from '../components/layout'
-import { StaticImage } from 'gatsby-plugin-image'
 import Spotify from 'react-spotify-embed'
 import 'bootstrap/dist/css/bootstrap.css';
 import Container from 'react-bootstrap/Container';
@@ -21,9 +20,9 @@ const IndexPage = () => {
     <Layout pageTitle="RËDLITE OFFICIAL">
       <Container fluid className='gx-0' id='/'>
         <Stack gap={3}>
-          <StaticImage
+          <img
             alt="redlite_band"
-            src="../images/band.jpg"
+            src="/images/band.jpg"
           />
 
           <Container>
@@ -35,8 +34,6 @@ const IndexPage = () => {
             </Row>
 
           </Container>
-
-
           <Container>
             <Row>
               <h1 className='font-mono text-center' id="music">Music</h1>
