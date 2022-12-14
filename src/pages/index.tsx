@@ -22,7 +22,7 @@ const IndexPage = () => {
       <Container fluid className='gx-0' id='/'>
         <Stack gap={3}>
           <StaticImage
-            alt="redlite band"
+            alt="redlite_band"
             src="../images/band.jpg"
           />
 

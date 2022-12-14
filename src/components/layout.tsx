@@ -17,7 +17,7 @@ const Layout = ({ pageTitle, children }) => {
     <Navbar collapseOnSelect expand='sm' bg='dark' variant='dark' className="justify-content-center">
       <Container>
         <Navbar.Brand href="/"> <StaticImage
-          alt="redlite band logo"
+          alt="redlite_band_logo"
           src="../images/logo.png"
           width={300}
         /></Navbar.Brand>
